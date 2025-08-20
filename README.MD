@@ -69,3 +69,50 @@
 | **tsBuildInfoFile**                  | Arquivo para armazenar informações de build incremental                              | Builds incrementais                                         |             |
 | **useDefineForClassFields**          | Usa semântica padrão de ECMAScript para campos de classe                             | Para compatibilidade com JS moderno                         |             |
 | **watch**                            | Modo watch para recompilar automaticamente                                           | Desenvolvimento                                             |             |
+
+```json
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build/src",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "strict": true,
+    "allowJs": false,
+    "pretty": true,
+    "skipDefaultLibCheck": false,
+    "skipLibCheck": false,
+    "moduleDetection": "force",
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noStrictGenericChecks": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": false,
+    "noFallthroughCasesInSwitch": true,
+    "noErrorTruncation": true,
+    "noEmitOnError": true,
+    "noEmitHelpers": true,
+    "noEmit": false,
+    "declaration": false,
+    "exactOptionalPropertyTypes": true,
+    "maxNodeModuleJsDepth": 0,
+    "moduleResolution": "nodenext",
+    "lib": ["ES2023"],
+    "module": "nodenext",
+    "target": "ES2023",
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "./build"],
+  "include": ["src/**/*"]
+}
+```
+
