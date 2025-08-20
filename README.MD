@@ -1,5 +1,33 @@
 # 📖 Explicação sobre o TsConfig
 
+- Node 22
+
+```json
+{
+  "name": "vitest",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "dev": "tsx --watch ./src/app.ts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "tsc": "^2.0.4",
+    "tsx": "^4.20.4"
+  }
+}
+```
+
 | Opção                                | O que faz                                                                            | Uso comum / Quando usar                                     |             |
 | ------------------------------------ | ------------------------------------------------------------------------------------ | ----------------------------------------------------------- | ----------- |
 | **allowJs**                          | Permite compilar arquivos `.js` junto com `.ts`                                      | Migração gradual de JS para TS                              |             |
