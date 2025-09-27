@@ -1,6 +1,6 @@
 # 📖 Explicação sobre o TsConfig
 
-- Node 22
+- Node 22.15.1
 
 ![tsconfig](https://i.imgur.com/9nDLS6t.png)
 
