@@ -4,6 +4,58 @@
 
 ![tsconfig](https://i.imgur.com/9nDLS6t.png)
 
+> **tsconfig.json**
+
+```json
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./build/src",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "strict": true,
+    "allowJs": false,
+    "pretty": true,
+    "skipDefaultLibCheck": false,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "skipLibCheck": false,
+    "moduleDetection": "force",
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noStrictGenericChecks": false,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true, //Alterado pq está dando error no import do fs
+    "noFallthroughCasesInSwitch": true,
+    "noErrorTruncation": true,
+    "noEmitOnError": true,
+    "noEmitHelpers": true,
+    "noEmit": false,
+    "declaration": false,
+    "exactOptionalPropertyTypes": true,
+    "maxNodeModuleJsDepth": 0,
+    "moduleResolution": "nodenext",
+    "lib": ["ES2023"],
+    "module": "nodenext",
+    "target": "ES2023",
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "./build"],
+  "include": ["src/**/*"]
+}
+```
+> **package.json**
+
 ```json
 {
   "name": "vitest",
@@ -100,49 +152,4 @@
 | **useDefineForClassFields**          | Usa semântica padrão de ECMAScript para campos de classe                             | Para compatibilidade com JS moderno                         |             |
 | **watch**                            | Modo watch para recompilar automaticamente                                           | Desenvolvimento                                             |             |
 
-```json
-{
-  // Visit https://aka.ms/tsconfig to read more about this file
-  "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./build/src",
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["*"]
-    },
-    "strict": true,
-    "allowJs": false,
-    "pretty": true,
-    "skipDefaultLibCheck": false,
-    "skipLibCheck": false,
-    "moduleDetection": "force",
-    "noUncheckedSideEffectImports": true,
-    "resolveJsonModule": true,
-    "removeComments": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noStrictGenericChecks": false,
-    "noImplicitThis": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": false,
-    "noFallthroughCasesInSwitch": true,
-    "noErrorTruncation": true,
-    "noEmitOnError": true,
-    "noEmitHelpers": true,
-    "noEmit": false,
-    "declaration": false,
-    "exactOptionalPropertyTypes": true,
-    "maxNodeModuleJsDepth": 0,
-    "moduleResolution": "nodenext",
-    "lib": ["ES2023"],
-    "module": "nodenext",
-    "target": "ES2023",
-    "types": ["node"]
-  },
-  "exclude": ["node_modules", "./build"],
-  "include": ["src/**/*"]
-}
-```
 
