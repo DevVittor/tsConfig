@@ -8,7 +8,6 @@
 
 ```json
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     "rootDir": "./src",
     "outDir": "./build/src",
@@ -35,7 +34,7 @@
     "noImplicitAny": true,
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true, //Alterado pq está dando error no import do fs
+    "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true,
     "noErrorTruncation": true,
     "noEmitOnError": true,
