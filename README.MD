@@ -2,6 +2,8 @@
 
 - Node 22
 
+![tsconfig](https://i.imgur.com/9nDLS6t.png)
+
 ```json
 {
   "name": "vitest",
